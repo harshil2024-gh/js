@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" language="javascript">
+        //write a js code to consruct function which calculates no of days are remaining in your upcoming birthday in current year
+        function dd(d1, d2) {
+            od = 24 * 60 * 60 * 1000
+            d1_ms = d1.getTime()
+            d2_ms = d2.getTime()
+            dd_ms = Math.abs(d1_ms - d2_ms)
+            return (Math.round(dd_ms / od))
+        }
+        var md1 = new Date()
+        md1.setDate(8)
+        md1.setMonth(0)
+        var md2 = new Date()
+        document.write("No of days left:" + dd(md1, md2))
+    </script>
+
+</head>
+<body>
+</body>
+</html>

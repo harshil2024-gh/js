@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write("This is head section<br>")
+        function abc() {
+            alert("This is functional alert")
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" onClick="abc()" value="click me!">
+    <br>
+    <script>
+        document.write("This is body script")
+        let a = 10 // if it defines const then we cannot update it in function
+        function f() {
+            a = 20
+            console.log(a)
+        }
+        f()
+
+
+        // object
+        const person = { firstname: "harshil", lastname: "vaghela" }
+        document.write("<h1><b>Hello my name is </b>" + person.firstname + " " + person.lastname + "</h1>")
+
+
+        //Array
+        let fruits = ["Banana", "Orange", "Apple", "Kiwi"]
+        let l = fruits.length
+        let fruit = fruits[0]
+        console.log(fruit)
+        console.log(fruits[l - 1])
+
+        var emp = new Array("abc", "xyz", "pqr")
+        document.write("----------Employee Details---------<br>")
+        for (i = 0; i < emp.length; i++) {
+            document.write("Employee-" + (i + 1) + ":   " + emp[i] + "<br>")
+        }
+
+
+        //task
+        var arr = [2, 4, 3, 1, 5]
+
+        document.write("<br>")
+        document.write("Given Array:" + arr)
+        document.write("<br>")
+        for (i = 0; i < arr.length; i++) {
+            document.write("<br>")
+            document.write("Multiplication is:" + (arr[i] * 2) + "<br>")
+        }
+        document.write("<br>")
+
+        //function with parameters
+        function showName(fname, lname) {
+            document.write("Hello " + fname + " " + lname)
+        }
+        function pro(a, b) {
+            return a * b
+        }
+        console.log(pro(10, 20))
+
+
+
+        //Another way to define function
+        var f = function (x, y) {
+            return x + y
+        }
+        let result = f(3, 5)
+        document.write("result=" + result)
+        document.write("<br>")
+        document.write("<br>")
+
+        //Object constructor
+        function emp2(id, name, age) {
+            this.id = id;
+            this.name = name;
+            this.age = age;
+        }
+        
+        let employee = new emp2(1, 'abc', 23)
+        document.write("id=" + employee.id + "  name=" + employee.name + " age=" + employee.age)
+        document.write("<br>")
+        document.write("<br>")
+    </script>
+    <input type="button" value="See Details" onClick="showName('ABC','XYZ')">
+</body>
+
+</html>

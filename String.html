@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" language="javascript">
+        x = "Hello"
+        y = " World"
+        x1 = "this is demo"
+        y1 = "is"
+        document.write("<br> char at 0th position:" + x.charAt(0) + x.charCodeAt(0))
+        document.write("replace:" + x.replace("hell", y) + "<br>")
+        document.write("split from l:" + x.split("l") + "<br>")
+        document.write("split from each letter:" + x.split("") + "<br>")
+        document.write("sub str:" + x1.substr(2, 5) + "<br>")
+        document.write("sub string:" + x1.substring(2, 5) + "<br>")
+        document.write("concate string:" + x.concat(y) + "<br>")
+        document.write("index of" + x1.indexOf(y1) + "<br>")
+        document.write("last index of:" + x.lastIndexOf(y1) + "<br>")
+
+        document.write("<h3>Task</h3><br>")
+        //write js to find position of first occurence of vowel "a" and last occurence of vowel a in given word ajanta also return the string between them
+        s = "ajanta"
+        i1 = s.indexOf("a")
+        i2 = s.lastIndexOf("a")
+        document.write("First occurence of vowel a at index:" + i1 + "<br>")
+        document.write("last occurence of vowel a at index:" + i2 + "<br>")
+        document.write("string between " + i1 + " and " + i2 + " is: " + s.substring((i1 + 1), i2) + "<br>")
+
+        //given digit is 23 -->2^3-->8 output
+        a = 23
+        fd = Math.floor(a / 10)
+        ld = a % 10
+        document.write("2^3 is:" + Math.pow(fd, ld))
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
