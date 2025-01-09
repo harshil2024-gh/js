@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+
+<body>
+    <h1>Set Text,Background color and color by class Name</h1>
+    <p class="p1">Hii</p>
+    <p class="p1">Hii</p>
+    <p class="p1">Hii</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptate expedita porro fugiat mollitia
+        exercitationem omnis necessitatibus explicabo enim beatae.</p>
+    <input type="button" value="design" onClick="design()">
+</body>
+<script>
+    //write a js to change text color and background color on click using className method
+    var x = document.getElementsByClassName("p1")
+    var bgcolor = ["orange", "blue", "green"]
+    var isChanged = false
+    function design() {
+        for (let i = 0; i < x.length; i++) {
+            if (isChanged) {
+                x[i].innerHTML = "hii"
+                x[i].style.color = ""
+                x[i].style.backgroundColor = ""
+            }
+            else {
+                x[i].innerHTML = "Para" + (i + 1)
+                x[i].style.color = "red"
+                x[i].style.backgroundColor = bgcolor[i]
+            }
+        }
+        isChanged = !isChanged
+    }
+</script>
+
+</html>

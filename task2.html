@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis deserunt dolor eum, incidunt optio
+        repudiandae nesciunt accusantium esse voluptates id! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Sed libero assumenda necessitatibus, ex iure deserunt quos laborum cumque. Delectus beatae possimus expedita
+        adipisci? Laborum voluptatibus id consectetur, accusamus mollitia expedita totam aperiam molestiae magni aut
+        quis consequuntur incidunt nisi odio commodi fugiat ratione, vitae omnis? Molestiae ipsam voluptate
+        reprehenderit, eius, cumque rerum dolore ipsa facilis nemo itaque delectus! Expedita ut aspernatur ipsam,
+        nostrum nulla distinctio ex accusantium, ab facere assumenda dolores facilis eos cupiditate ducimus. Harum quae
+        eveniet nam. Aliquam illo minima deserunt dolor, explicabo hic temporibus repellendus similique, suscipit
+        obcaecati quae recusandae quas atque nulla doloribus dolorem vitae nostrum.</p>
+    <input type="button" value="Lowercase" onClick="lowercase()">
+    <input type="button" value="Uppercase" onClick="uppercase()">
+</body>
+<script>
+    //write a js code to convert uppercase and lowercase from written text on click
+    var i = document.getElementsByTagName("input")
+    i[0].style.backgroundColor = "green"
+    i[1].style.backgroundColor = "yellow"
+    function lowercase() {
+        var a = document.getElementsByTagName("p")
+        a[0].style.textTransform = "lowercase"
+    }
+    function uppercase() {
+        var a = document.getElementsByTagName("p")
+        a[0].style.textTransform = "uppercase"
+    }
+</script>
+
+</html>
